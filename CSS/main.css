@@ -113,6 +113,19 @@ background-color: #1F2937
   color: #fff;
 }
 
+.githubLink {
+  text-decoration: none;
+}
+
+.githubLink h1 {
+  color: #4B5563; 
+}
+
+.githubLink:hover h1 {
+  color: #9CA3AF; 
+}
+
+
 
 /* I didn't make this part, i only adjusted it to my needs. I found it here: https://uiverse.io/InfinityLoopGames/rotten-dog-63. */
 
@@ -164,4 +177,44 @@ background-color: #1F2937
     box-shadow: 0 0 0.6em 0.25em var(--glow-color),
       0 0 2.5em 2em var(--glow-spread-color),
       inset 0 0 0.5em 0.25em var(--glow-color);
+  }
+
+/* This is another copied button, and i also adjusted it for my needs. Here is the source: https://uiverse.io/CYBWEBALI/unlucky-insect-96. */
+
+.githubButton {
+    display: grid;
+    place-items: center;
+    background: #e3edf7;
+    padding: 1.4em;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+            -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0);
+    cursor: pointer;
+    transition: transform 0.5s;
+    position: absolute;
+    bottom: 20px; 
+    left: 20px;   
+    
+    
+  }
+  
+  .githubButton:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+            inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+            -0.5px -0.5px 0px rgba(255,255,255,1),
+            0.5px 0.5px 0px rgba(0,0,0,0.15),
+            0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+    transform: translateY(0.5em);
+    
+  }
+  
+  .githubButton svg {
+    transition: transform 0.5s;
+  }
+  
+  .githubButton:hover svg {
+    transform: scale(0.9);
+    fill: #333333;
   }
