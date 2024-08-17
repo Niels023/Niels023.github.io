@@ -67,7 +67,7 @@ body {
 
 .adjust {
   position: absolute;
-  top: 04%;
+  top: 11%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
@@ -75,7 +75,7 @@ body {
 
 .adjust2 {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
