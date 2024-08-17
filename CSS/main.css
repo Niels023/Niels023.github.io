@@ -1,99 +1,105 @@
-html{
-    background-color: #111827;
-    color: #fff
+html {
+  background-color: #111827;
+  color: #fff;
+  box-sizing: border-box;
 }
 
-
-body{
-    font-family: monospace;
+body {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-
-.textCenter{
-    text-align: center;
+.textCenter {
+  margin-top: 80px;
 }
 
-
-.buttonCenter{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.buttonCenter {
+  margin: 20px auto;
+  width: auto;
 }
-
 
 .roundedBox {
-    background-color: #1F2937;
-    border-radius: 15px; 
-    overflow: hidden; 
-    text-align: center;
-    max-width: 25%; 
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  background-color: #1F2937;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
 }
-
-
-.boxImage {
-    width: 100%; 
-    height: auto; 
-    background-color: #1F2937;
-}
-
-
-.boxText {
-    padding: 15px; 
-    font-size: 16px;
-    color: #fff;
-}
-
 
 .roundedBox2 {
-    background-color: #1F2937;
-    border-radius: 15px; 
-    overflow: hidden; 
-    text-align: center;
-    max-width: 25%; 
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  background-color: #1F2937;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
-
-.pointToPointIcon{
-    max-width: 5%; 
-    position: absolute;
-    top: 34%;
-    left: 47%;
+.boxImage {
+  width: 100%;
+  height: auto;
+  background-color: #1F2937;
 }
 
+.boxText {
+  padding: 15px;
+  font-size: 16px;
+}
 
-.adjust{
+.pointToPointIcon {
+  width: 10%;
+  max-width: 100px;
+  margin: 20px auto;
+  display: block;
+}
+
+.adjust {
   position: absolute;
-  top: 50;
+  top: 04%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin: 0;
 }
 
-
-.adjust2{
+.adjust2 {
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin: 0;
 }
 
-.adjust3{
+.adjust3 {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 1000; /* idk what this does but removing it destroys the whole page */
 }
 
 .topnav a {
-  float: left;
   color: #fff;
   text-align: center;
   padding: 14px 16px;
@@ -103,10 +109,8 @@ body{
 }
 
 .topnav a:hover {
-background-color: #1F2937
-
+  background-color: #1F2937;
 }
-
 
 .topnav a.active {
   background-color: #000000;
